@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Technical Documentation Page - A freeCodeCamp Responsive Web Design Project">
+    
+        <link rel="stylesheet" href="static/static.css">
+    
+        <title>Flexbox vs. CSS Grid</title>
+    </head>
+    </head>
+    <body>
+        <nav id="navbar">
+          <header>CSS Flexbox vs CSS Grid</header>
+          <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#getting_started" class="nav-link">Getting Started</a></li>
+            <li><a href="#using_flexbox" class="nav-link">Using Flexbox</a></li>
+            <li><a href="#display_and_flex-direction_properties" class="nav-link">Display and Flex-Direction Properties</a></li>
+            <li><a href="#justify-content_property" class="nav-link">Justify-Content Property</a></li>
+            <li><a href="#align-items_property" class="nav-link">Align-Items Property</a></li>
+            <li><a href="#using_css_grid" class="nav-link">Using CSS Grid</a></li>
+            <li><a href="#display_and_grid-template_properties" class="nav-link">Display and Grid-Template Properties</a></li>
+            <li><a href="#grid-row_and_grid-column_properties" class="nav-link">Grid-Row and Grid-Column Properties</a></li>
+            <li><a href="#the_gap_property" class="nav-link">The Gap Property</a></li>
+            <li><a href="#flexbox_vs._css_grid" class="nav-link">Flexbox vs. CSS Grid</a></li>
+          </ul>
+        </nav>
+      
+        <main id="main-doc">
+          <section id="introduction" class="main-section">
+            <header>
+              Introduction
+            </header>
+            <article>
+              <p>Grid and Flexbox are two fantastic layout tools to use when writing your CSS, but it can be hard to know which one to pick, or when to use one instead of the other. Both allow us to create complex layouts that were previously only possible by applying CSS hacks and/or JavaScript. Flexbox and CSS Grid share multiple similarities and many layouts can be solved with both. </p>
+            </article>
+          </section>
+          <section id="getting_started" class="main-section">
+            <header>
+              Getting Started
+            </header>
+            <article>
+              <p>Both Flexbox and CSS Grid create layouts using rows and columns, otherwise referred to as 'dimensions'. These dimensions operate along either an x-axis (rows) or y-axis (columns).</p>
+              <p>Flexbox is often referred to as 'one-dimensional' because it lays out items along either the horizontal or the vertical axis, so you have to decide whether you want a row-based or a column-based layout.</p>
+              <p>CSS Grid, on the other hand, is 'two-dimensional' as it allows you to work both horizontally and vertically, where you can precisely place grid items into cells defined by rows and columns.</p>
+              <p><strong>However</strong>, this doesn't mean that you have to use Flexbox for all one-dimension layouts, and only use CSS Grid for two-dimensional layouts! It <em>is</em> possible to build 2D layouts with Flexbox, and CSS Grid will still work perfectly for many 1D layouts.</p>
+            </article>
+          </section>
+          <section id="using_flexbox" class="main-section">
+            <header>
+              Using Flexbox
+            </header>
+            <article>
+              <p>The main properties that Flexbox uses are <code>display</code>, <code>flex-direction</code>, <code>justify-content</code> and <code>align-items</code>.</p>
+          </section>
+          <section id="display_and_flex-direction_properties" class="main-section">
+            <header>Display and Flex-Direction Properties</header>
+            <article>
+              <p>To begin with, you'll need to create a container that includes the items you want to style.</p>
+              <ul>
+                <li>The flexbox <code>display</code> property can be set to either <code>flex</code> or <code>inline-flex</code>; <code>inline-flex</code> is used to make the container inline, not the items inside the container.</li>
+                <li>The <code>flex-direction</code> has four different values it can be set to; <code>row</code>, <code>column</code>, <code>row-reverse</code> and <code>column-reverse</code>.</li>
+                <li>The <code>row</code> and <code>column</code> put child elements of the <code>flex</code> container into either a row or a column. The <code>row-reverse</code> and <code>column-reverse</code> values reverse the order of child items as they're listed in the HTML source code, so the last child would be placed first, the first child would be placed last and so forth. </li>
+              </ul>
+            </article>
+          </section>
+          <section id="justify-content_property" class="main-section">
+            <header>
+              Justify-Content Property
+            </header>
+            <article>
+              <p>The <code>justify-content</code> property aligns items on the main axis, which is the same direction as the items in the container. It can be set to six different values: <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-around</code>, <code>space-between</code> and <code>space-evenly</code>.</p>
+              <ul>
+                <li><code>flex-start</code> aligns items in the container to the 'start' of the container - left for rows, or top for columns.</li>
+                <li><code>flex-end</code> aligns items in the container to the 'end' of the container - right for rows, or bottom for columns.</li>
+                <li><code>center</code> will align the items in the container to the center line of the container; this will be horizontally centered for rows, and vertically centered for columns</li>
+                <li><code>space-around</code> adds an equal amount of space between each item and adds a "half-size" space at either end.</li>
+                <li><code>space-evenly</code> is similar, but adds equal amounts of space between each item and at either end.</li>
+                <li>Finally, <code>space-between</code> takes all of the available space and shares it between items in the container evenly (with no spaces added at either end).</li>
+              </ul>
+            </article>
+          </section>
+          <section id="align-items_property" class="main-section">
+            <header>Align-Items Property</header>
+            <article>
+              <p>The <code>align-items</code> property helps position the items on the cross axis, which is perpendicular to the main axis of the items. This results in the <u>opposite behaviour</u> to <code>justify-content</code>! It can be set to four different values: <code>stretch</code>, <code>flex-start</code>, <code>flex-end</code> and <code>center</code>.</p>
+              <ul>
+                <li><code>stretch</code> is set by default, and will automatically stretch the items to the same height as the container (<strong>NOTE:</strong> this will be from top-to-bottom on row containers, and from left-to-right on column containers)</li>
+                <li><code>flex-start</code> aligns items in the container to the 'start' of the container - left for <u>columns</u>, or top for <u>rows</u>.</li>
+                <li><code>flex-end</code> aligns items in the container to the 'end' of the container - right for <u>columns</u>, or bottom for <u>rows</u>.</li>
+                <li><code>center</code> will align the items in the container to the center line of the container; vertically for rows, horizontally for columns.</li>
+              </ul>
+              <p>For more details and further usage examples, consult the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout" target="_blank"><u>Flexbox Documentation</u></a>.</p>
+            </article>
+          </section>
+          <section id="using_css_grid" class="main-section">
+            <header>
+              Using CSS Grid
+            </header>
+            <article>
+              <p>The main properties used for CSS Grid are: <code>display</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>grid-column</code>, <code>grid-row</code> and <code>gap</code>.</p>
+              <p>Unlike Flexbox, CSS Grid uses these properties to style both the parent container and individual child elements.</p>
+            </article>
+          </section>
+          <section id="display_and_grid-template_properties" class="main-section">
+            <header>Display and Grid-Template Properties</header>
+            <article>
+              <ul>
+                <li>The CSS Grid <code>display</code> property can be set to <code>grid</code> or <code>inline-grid</code> in a similar way to Flexbox</li>
+                <li><code>grid-template-columns</code> defines the line name and size of the <code>grid-column</code> property assigned to each item in a container.</li>
+                <li><code>grid-template-rows</code> does the same thing, except it affects the <code>grid-row</code> property of each item in a container.</li>
+              </ul>
+              <p>Both <code>grid-template-columns</code> and <code>grid-template-rows</code> have many different values that can be assigned to them to dictate the various size and arrangement of individual row and columns items. you can set the value for these properties to pixels (px), fractions (fr), character width (ch), auto, or none. You can mix and match the values. </p>
+              <p>For more details and further usage examples, consult the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank"><u>CSS Grid Documentation</u></a>.</p>
+            </article>
+          </section>
+          <section id="grid-row_and_grid-column_properties" class="main-section">
+            <header>Grid-Row and Grid-Column Properties</header>
+            <article>
+              <p>The <code>grid-column</code> and <code>grid-row</code> properties both define an item's size and location within the grid container. Both can be set to a number, a name, or to a global CSS value such as <code>inherit</code> or <code>unset</code>.</p>
+            </article>
+          </section>
+          <section id="the_gap_property" class="main-section">
+            <header>The Gap Property</header>
+            <article>
+              <p>The CSS Grid <code>gap</code> property sets the space between columns and rows inside of a container. Its value can be pixels(px), font-size(em), percentages, a <code>calc()</code> function, and more. You can also specify if it is for rows only: <code>row-gap</code> or for columns only: <code>column-gap</code>.</p>
+            </article>
+          </section>
+          <section id="flexbox_vs._css_grid" class="main-section">
+            <header>
+              Flexbox vs. CSS Grid
+            </header>
+            <article>
+              <p>So which should you be using: Flexbox or CSS Grid? The answer is both!</p>
+              <p>The reality is that CSS Grid can do things that Flexbox can't do, and Flexbox can do things that CSS Grid can't do, but they can work together - a grid item can be a flexbox container, and a flex item can be a grid container.</p>
+              <p>Layouts need to be assessed individually on a case by case basis to determine whether to use Flexbox, CSS Grid, or a mix of both. It really depends on what the layout needs to look like, and what content is present.</p>
+              <p><strong>CSS Grid</strong> focuses on precise content placement; each item is a grid cell, lined up along both a horizontal and a vertical axis. </p>
+              <p>Properties such as <code>grid-template-rows</code> and <code>grid-template-columns</code> and utilities like the fraction unit (fr) let you precisely calculate everything, making CSS Grid especially suitable for creating unusual layouts like broken, asymmetrical and overlapping layouts.</p>
+              <p>CSS Grid also makes it possible to create responsive layouts without using media queries, by making use of <code>auto</code> layout, <code>minmax()</code>, <code>repeat()</code> and <code>auto-fill</code>.</p>
+              <p>Generally, the strengths of CSS Grid lend themselves to creating <strong>structured, ordered and precisely-positioned layouts</strong> and will best suit any content that needs those qualities - whole page layouts, literal grids, </p>
+              <p><strong>Flexbox</strong> focuses on content flow rather than content placement. Widths (or heights) of flex items are determined by the content of the item. Flex items grow and shrink according to their inner content and the available space.</p>
+              <p>In short, Flexbox enables you to allocate space and align items flexibly. It also allows you to decide how your content should behave when there's too much or not enough space on the screen. Using the <code>flex-grow</code> and <code>flex-shrink</code> properties, you can achieve a completely fluid layout that optimises the allocation of flex items at every viewpoint size.</p>
+              <p>Flexbox generally works best with content that needs to be <strong>flexible, intrinsicly-sized and responsive</strong>; things like centering items, adjusting the last item(s) of lists, sticking footers to the bottom of pages, and creating responsive menus. There are even more Flexbox usage examples in the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox" target="_blank">MDN Docs</a>.</p>
+      
+              <p>The ultimate answer to the Flexbox vs. CSS Grid question is that both have their pros and cons, and both are better suited to some things than the other. Don't stick to one or the other, but always think through which serves your goals better for any given layout. If you need to, use both!</p>
+      
+              <p>To learn more about these two fantastic tools, there are plenty of resources available. <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a> is a great resource for not only CSS but also for HTML, JavaScript, APIs and much more. <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> is also a great resource for all things web-development-related. Most of all, play around with both Flexbox and CSS Grid and see what they can do for you.</p>
+            </article>
+          </section>
+            <div id="btt-button">
+            <a id="btt-link">
+              Back to Top
+            </a>
+          </div>
+        </main>
+      </body>
+</html>
