@@ -1,4 +1,4 @@
-![Image]()
+![Image](assets/images/technical-ss.jpg)
 
 This mini project was made as part of the [freeCodeCamp](https://www.freecodecamp.org/learn/) Responsive Web Design certification course. 
 
