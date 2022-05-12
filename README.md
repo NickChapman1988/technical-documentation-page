@@ -1,108 +1,78 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Image]()
 
-Welcome USER_NAME,
+This mini project was made as part of the [freeCodeCamp](https://www.freecodecamp.org/learn/) Responsive Web Design certification course. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The brief was to build a [CodePen.io](codepen.io) Technical Documentation Page app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+For this project, I chose to write documentation comparing Flexbox and CSS Grid, as I recently studied these as part of the Responsive Web Design course. 
 
-## Gitpod Reminders
+My original CodePen can be viewed [here](https://codepen.io/nickchapman1988/pen/LYQNKVM)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+As part of the project brief, several user stories were specified to be met. These were as follows:
 
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+<table>
+    <tr>
+    <th>STORY ID</th>
+    <th>USER STORY</th>
+    </tr>
+    <tr>
+    <td>User Story #1:</td>
+    <td>I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).</td>
+    </tr>
+    <tr>
+    <td>User Story #2:</td>
+    <td> Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.</td>
+    </tr>
+    <tr>
+    <td>User Story #3:</td>
+    <td>The first element within each .main-section should be a header element which contains text that describes the topic of that section.</td>
+    </tr>
+    <tr>
+    <td>User Story #4:</td>
+    <td>Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").</td>
+    </tr>
+    <tr>
+    <td>User Story #5:</td>
+    <td>The .main-section elements should contain at least 10 p elements total (not each).</td>
+    </tr>
+    <tr>
+    <td>User Story #6:</td>
+    <td>The .main-section elements should contain at least 5 code elements total (not each).</td>
+    </tr>
+    <tr>
+    <td>User Story #7:</td>
+    <td>The .main-section elements should contain at least 5 li items total (not each).</td>
+    </tr>
+    <tr>
+    <td>User Story #8:</td>
+    <td> I can see a nav element with a corresponding id="navbar".</td>
+    </tr>
+    <tr>
+    <td>User Story #9:</td>
+    <td>The navbar element should contain one header element which contains text that describes the topic of the technical documentation.</td>
+    </tr>
+    <tr>
+    <td>User Story #10:</td>
+    <td>Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.</td>
+    </tr>
+    <tr>
+    <td>User Story #11:</td>
+    <td>The header element in the navbar must come before any link (a) elements in the navbar.</td>
+    </tr>
+    <tr>
+    <td>User Story #12:</td>
+    <td>Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").</td>
+    </tr>
+    <tr>
+    <td>User Story #13:</td>
+    <td>When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.</td>
+    </tr>
+    <tr>
+    <td>User Story #14:</td>
+    <td>On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.</td>
+    </tr>
+    <tr>
+    <td>User Story #15:</td>
+    <td>My Technical Documentation page should use at least one media query.</td>
+    </tr>
+</table> 
