@@ -17,15 +17,15 @@ As part of the project brief, several user stories were specified to be met. The
     </tr>
     <tr>
     <td>User Story #1:</td>
-    <td>I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).</td>
+    <td>I can see a main element with a corresponding <code>id="main-doc"</code>, which contains the page's main content (technical documentation).</td>
     </tr>
     <tr>
     <td>User Story #2:</td>
-    <td> Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.</td>
+    <td> Within the <code>#main-doc</code> element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.</td>
     </tr>
     <tr>
     <td>User Story #3:</td>
-    <td>The first element within each .main-section should be a header element which contains text that describes the topic of that section.</td>
+    <td>The first element within each <code>.main-section</code> should be a header element which contains text that describes the topic of that section.</td>
     </tr>
     <tr>
     <td>User Story #4:</td>
@@ -33,31 +33,31 @@ As part of the project brief, several user stories were specified to be met. The
     </tr>
     <tr>
     <td>User Story #5:</td>
-    <td>The .main-section elements should contain at least 10 p elements total (not each).</td>
+    <td>The <code>.main-section</code> elements should contain at least 10 <code>p</code> elements total (not each).</td>
     </tr>
     <tr>
     <td>User Story #6:</td>
-    <td>The .main-section elements should contain at least 5 code elements total (not each).</td>
+    <td>The <code>.main-section</code> elements should contain at least 5 <code>code</code> elements total (not each).</td>
     </tr>
     <tr>
     <td>User Story #7:</td>
-    <td>The .main-section elements should contain at least 5 li items total (not each).</td>
+    <td>The <code>.main-section</code> elements should contain at least 5 <code>li</code> items total (not each).</td>
     </tr>
     <tr>
     <td>User Story #8:</td>
-    <td> I can see a nav element with a corresponding id="navbar".</td>
+    <td> I can see a <code>nav</code> element with a corresponding <code>id="navbar"</code>.</td>
     </tr>
     <tr>
     <td>User Story #9:</td>
-    <td>The navbar element should contain one header element which contains text that describes the topic of the technical documentation.</td>
+    <td>The <code>navbar</code> element should contain one <code>header</code> element which contains text that describes the topic of the technical documentation.</td>
     </tr>
     <tr>
     <td>User Story #10:</td>
-    <td>Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.</td>
+    <td>Additionally, the <code>navbar</code> should contain link (<code>a</code>) elements with the class of nav-link. There should be one for every element with the class main-section.</td>
     </tr>
     <tr>
     <td>User Story #11:</td>
-    <td>The header element in the navbar must come before any link (a) elements in the navbar.</td>
+    <td>The <code>header</code> element in the navbar must come before any link (<code>a</code>) elements in the navbar.</td>
     </tr>
     <tr>
     <td>User Story #12:</td>
